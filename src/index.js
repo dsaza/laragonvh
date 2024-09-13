@@ -81,6 +81,7 @@ const createMainWindow = () => {
     fullscreenable: false,
     maximizable: false,
     title: 'Laragon Virtual Hosts',
+    icon: path.join(__dirname, 'assets/logo.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -111,6 +112,7 @@ const createAddHostWindow = () => {
     parent: mainWindow,
     modal: true,
     closable: false,
+    icon: path.join(__dirname, 'assets/logo.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
