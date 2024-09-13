@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Add Virtual Host</title>
+  <link rel="stylesheet" href="./css/preflight.css" />
+  <link rel="stylesheet" href="./css/stylesheet.css" />
+</head>
+
+<body>
+  <main class="content is-full">
+    <form class="form" id="form-add-host">
+      <div class="form-header">
+        <p>
+          Type the host and root directory for the new virtual host.
+        </p>
+      </div>
+      <div class="form-content">
+        <div class="form-field">
+          <label for="input-host">Host</label>
+          <input type="text" id="input-host" name="input-host" placeholder="my-custom-project.dev" autocomplete="off" autocapitalize="off" />
+          <span id="error-host" class="form-error hidden"></span>
+        </div>
+        <div class="form-field">
+          <label for="input-path">Path</label>
+          <input type="text" id="input-path" name="input-path" placeholder="C:/Users/user/documents/project" autocomplete="off" autocapitalize="off" />
+          <span id="error-path" class="form-error hidden"></span>
+        </div>
+      </div>
+      <div class="form-footer">
+        <button type="button" id="btn-cancel">Cancel</button>
+        <button type="submit" id="btn-submit" disabled>Save</button>
+      </div>
+    </form>
+  </main>
+  <script src="./js/add-host.js"></script>
+</body>
+
+</html>
