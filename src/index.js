@@ -6,7 +6,7 @@ const { createVirtualHosts } = require('./lib/virtual-hosts');
 let mainWindow;
 let addHostWindow;
 
-const IS_DEVELOPMENT = process.env.NODE_ENV !== 'production';
+const IS_DEVELOPMENT = false;
 
 const TEMPLATE_MENU = [
   {
